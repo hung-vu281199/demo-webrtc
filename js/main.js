@@ -44,6 +44,7 @@ function errorMsg(msg, error) {
 
 async function init(e) {
   try {
+    alert("test1")
     const stream = await navigator.mediaDevices.getUserMedia(constraints);
     handleSuccess(stream);
     e.target.disabled = true;
